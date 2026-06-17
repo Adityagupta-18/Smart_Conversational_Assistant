@@ -1,0 +1,5 @@
+# virutal env :
+.venv
+
+# contains the Groq api :
+.env
