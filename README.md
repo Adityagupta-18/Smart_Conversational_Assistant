@@ -66,7 +66,7 @@ The chatbot maintains conversation history throughout the session, enabling cont
         Tavily Search          Groq API
               │                     │
               ▼                     │
-        Search Results             │
+        Search Results              │
               │                     │
               └──────────┬──────────┘
                          │
