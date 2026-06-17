@@ -51,13 +51,31 @@ The chatbot maintains conversation history throughout the session, enabling cont
 
 ## Project Architecture
 
-User Query
-│
-├── Query Classification
-│   ├── Real-Time Query → Tavily Search → Groq Response
-│   └── General Query → Groq Response
-│
-└── Conversation History Management
+```text
+                    User Query
+                         │
+                         ▼
+              Query Classification
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+              ▼                     ▼
+     Real-Time Query         General Query
+              │                     │
+              ▼                     ▼
+        Tavily Search          Groq API
+              │                     │
+              ▼                     │
+        Search Results             │
+              │                     │
+              └──────────┬──────────┘
+                         │
+                         ▼
+                  Final Response
+                         │
+                         ▼
+             Conversation History
+```
 
 ---
 
