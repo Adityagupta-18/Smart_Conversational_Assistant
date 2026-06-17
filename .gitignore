@@ -1,5 +1,8 @@
 # virutal env :
 .venv
 
-# contains the Groq api :
 .env
+# env contains the Groq api : https://groq.com/
+# env also contains Tavily api for real time searches : https://app.tavily.com/home
+
+
